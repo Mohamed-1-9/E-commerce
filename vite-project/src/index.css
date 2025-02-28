@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.slick-arrow{
+    display: none !important;
+}
+::selection {
+    background-color:#00A63EEB;
+    color: white;
+}
