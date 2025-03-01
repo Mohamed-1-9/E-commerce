@@ -27,9 +27,7 @@ function Navbar(props) {
     <h3  className='mt-3'>
           <NavLink to="/home" className="hover:text-green-700 transition" aria-current="page">Home</NavLink>
     </h3>
-    {auth ? <h3 className='mt-3'>
-          <NavLink to="/products" className="hover:text-green-700 transition" aria-current="page">products</NavLink>
-    </h3>:""}
+    
     {auth ? <h3 className='mt-3'>
           <NavLink to="/category" className="hover:text-green-700 transition" aria-current="page">category</NavLink>
     </h3>:""}
@@ -60,7 +58,7 @@ function Navbar(props) {
         {auth?
         <li className='relative'>
           <Link to={"/wishList"}><i class="fa-solid fa-heart"></i></Link>
-          {wishlistProducts?.data?<h6 className='text-white bg-red-700  w-4 rounded-2xl flex justify-center items-center h-4 absolute -top-2 -right-2
+          {wishlistProducts?.count?<h6 className='text-white bg-red-700  w-4 rounded-2xl flex justify-center items-center h-4 absolute -top-2 -right-2
           '>{wishlistProducts.count}</h6>:""}
         </li>
         :""}

@@ -13,12 +13,12 @@ function AuthContext({children}) {
             setUserId(decode.id)
             }
     }
+    const token = localStorage.getItem("token")
     useEffect(()=> {
-        const token = localStorage.getItem("token")
-        if(token){
+
             setAuth(token)
-        }
-    },[])
+        
+    },[token])
     return (
         <tokencontext.Provider value={{auth, setAuth,userId,jwt}}>
             {children}

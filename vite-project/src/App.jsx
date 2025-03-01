@@ -79,10 +79,7 @@ function App() {
           path: '*' // 404
         },
         
-        {
-          element: <Products/>,
-          path: 'products' // 404
-        }
+        
         
       ]
     }
