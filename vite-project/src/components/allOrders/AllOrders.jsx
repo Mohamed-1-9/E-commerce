@@ -19,13 +19,13 @@ function AllOrders(props) {
             return axios.get(`https://ecommerce.routemisr.com/api/v1/orders/user/${userId}`)
         }
     
-    if(userId){
+    
         var {data,isLoading,isError,error}=useQuery({
             queryKey: ["orders"],
             
             queryFn: userOrders
     })
-    }
+    
 const orders=data
 if(isLoading){
     return <div className='h-screen  flex justify-center items-center'>

@@ -6,13 +6,12 @@ import NotFounded from './components/notFounded/notFounded';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import AuthContext from './context/authContext';
-import Products from './components/products/products';
 import Category from './components/category/Category';
 import { QueryClient, QueryClientProvider} from '@tanstack/react-query'
 import ProductDetails from './components/productDetails/ProductDatails';
 import AddCartProvider from './context/addCart';
 import Cart from './components/cart/cart';
-import toast, { Toaster } from 'react-hot-toast';
+import  { Toaster } from 'react-hot-toast';
 import CashOrder from './components/cash/CashOrder';
 import AllOrders from './components/allOrders/AllOrders';
 import Wishlist from './context/Wishlist';
