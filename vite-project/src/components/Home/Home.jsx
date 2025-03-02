@@ -42,7 +42,7 @@ function Home() {
             <SimpleSlider/>
             <div className='flex'>
             </div>
-            <div className='gap-3 mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
+            <div className='gap-3 mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
                 {allProducts.map((product) => {
                     return <Link to={`/productDetails/${product._id}`} className='group relative cursor-pointer bg-blue-100 rounded-xl overflow-hidden' key={product._id}>
                         <img className='w-full h-64' src={product.imageCover} alt={product.name} />
